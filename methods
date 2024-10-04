@@ -1,0 +1,45 @@
+Method	Description	Syntax	Example
+append()	Adds an element at the end of the list	list.append(item)	l.append(10) adds 10 to the end of list l.
+extend()	Adds all elements of a list to another list	list.extend(iterable)	l.extend([20, 30]) adds [20, 30] to the end of list l.
+insert()	Inserts an element at a specified index	list.insert(index, item)	l.insert(1, 5) inserts 5 at index 1.
+remove()	Removes the first occurrence of a specific element	list.remove(item)	l.remove(5) removes the first 5 from the list.
+pop()	Removes and returns the element at a given index	list.pop(index)	l.pop(1) removes and returns the element at index 1.
+clear()	Removes all elements from the list	list.clear()	l.clear() clears all items in the list.
+index()	Returns the index of the first matching element	list.index(item)	l.index(10) returns the index of 10 in the list.
+count()	Counts the number of occurrences of an element	list.count(item)	l.count(3) counts occurrences of 3 in the list.
+sort()	Sorts the list in ascending order	list.sort()	l.sort() sorts the list in place.
+reverse()	Reverses the elements of the list	list.reverse()	l.reverse() reverses the list.
+copy()	Returns a shallow copy of the list	list.copy()	new_list = l.copy() makes a copy of list l.
+List Example:
+python
+Copy code
+l = [1, 2, 3]
+l.append(4)  # [1, 2, 3, 4]
+l.extend([5, 6])  # [1, 2, 3, 4, 5, 6]
+l.pop()  # Removes 6, leaving [1, 2, 3, 4, 5]
+2. Tuple Methods
+Tuples are immutable (you cannot change them), but they support limited operations.
+
+Method	Description	Syntax	Example
+count()	Returns the number of occurrences of a value	tuple.count(item)	t.count(2) counts occurrences of 2 in tuple t.
+index()	Returns the index of the first matching element	tuple.index(item)	t.index(3) returns the index of 3 in tuple t.
+Tuple Example:
+python
+Copy code
+t = (1, 2, 3, 2)
+print(t.count(2))  # Output: 2
+print(t.index(3))  # Output: 2
+3. Dictionary Methods
+Dictionaries are mutable, and Python provides methods for manipulating key-value pairs.
+
+Method	Description	Syntax	Example
+get()	Returns the value of a specified key	dict.get(key, default)	d.get('name') returns the value for 'name'.
+keys()	Returns a list of all the dictionary’s keys	dict.keys()	d.keys() returns a view of all keys.
+values()	Returns a list of all the dictionary’s values	dict.values()	d.values() returns a view of all values.
+items()	Returns a list of all key-value pairs	dict.items()	d.items() returns a view of all key-value pairs.
+update()	Updates the dictionary with new key-value pairs	dict.update(new_dict)	d.update({'age': 25}) adds/updates key-value pairs.
+pop()	Removes a key and returns its value	dict.pop(key)	d.pop('name') removes the 'name' key and returns its value.
+popitem()	Removes and returns the last key-value pair	dict.popitem()	d.popitem() removes the last key-value pair.
+setdefault()	Returns the value of a key, or sets a default	dict.setdefault(key, default)	d.setdefault('age', 25) sets default if 'age' key doesn't exist.
+clear()	Removes all items from the dictionary	dict.clear()	d.clear() clears all items in the dictionary.
+copy()	Returns a shallow copy of the dictionary	dict.copy()	new_dict = d.copy() makes a copy of the dictionary.
